@@ -1,6 +1,6 @@
-w<p align="center"><img src=debian-logo.png width="300"></p><br>
+<p align="center"><img src=logo.jpeg width="300"></p><br>
 
-Manually install Debian trixie/testing with LUKS2 and BTRFS with subvolumes and Encrypted Swap: 
+How to connect to usask-secure on OpenBSD / NetBSD / FreeBSD / Solaris / Linux. 
 
  - EFI Boot Partition
  - LUKS2 Swap Partition
@@ -12,11 +12,11 @@ Manually install Debian trixie/testing with LUKS2 and BTRFS with subvolumes and 
 
 ## Pre-installation setup
 
-Boot from latested stable or testing release of Debian/Gentoo LiveISO. I personally used a working Gentoo Environment.
+Assuming you already have drivers installed and have previously connected to a known working wifi network. 
 
 Installed needed packages
 
-    apt install debbootstrap cryptsetup
+    pkg_add wpa_supplicant
 On Gentoo
 ````
 sudo emerge -av debootstrap cryptsetup
