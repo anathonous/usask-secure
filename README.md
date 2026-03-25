@@ -1,7 +1,7 @@
 <p align="center"><img src=logo.jpeg width="300"></p><br>
 
-How to connect to usask-secure on 
-(WPA2 Enterprise)
+How to connect to usask-secure (WPA2 Enterprise) on 
+
  - OpenBSD
  - NetBSD 
  - FreeBSD
