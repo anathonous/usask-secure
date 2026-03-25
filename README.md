@@ -24,7 +24,7 @@ On OpenBSD
  doas rcctl start wpa_supplicant
 ````
 
-## Configure /etc/wpa_supplicant.conf
+## Configure /etc/wpa_supplicant.conf and hostname.if
 
 ### edit wpa_supplicant
 
