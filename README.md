@@ -20,6 +20,8 @@ Install needed packages
 ````
 On OpenBSD
 ````
+ doas touch /etc/wpa_supplicant.conf
+ doas chmod 600 /etc/wpa_supplicant.conf
  doas rcctl enable wpa_supplicant
  doas rcctl start wpa_supplicant
 ````
@@ -60,7 +62,8 @@ Naming depends heavily on your wifi driver and card. Should be hostname.DRIVER
 
 ### Apply
 ````
-    doas reboot
+   doas chmod 600 /etc/hostname.if
+   doas reboot
 ````
 Should work upon reboot or 
 ````
