@@ -57,6 +57,8 @@ Naming depends heavily on your wifi driver and card. Should be hostname.DRIVER
     inet autoconf
 
  - save config
+
+   ### Apply
 ````
     doas reboot
 ````
