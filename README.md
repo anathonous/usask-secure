@@ -1,14 +1,14 @@
 <p align="center"><img src=logo.jpeg width="300"></p><br>
 
-How to connect to usask-secure on OpenBSD / NetBSD / FreeBSD / Solaris / Linux. 
+How to connect to usask-secure on 
 
- - EFI Boot Partition
- - LUKS2 Swap Partition
- - LUKS2 Container
- - BTRFS Partition
- - 2 BTRFS Subvolumes
+ - OpenBSD
+ - NetBSD 
+ - FreeBSD
+ - Solaris
+ - Linux
 
-# Debian installation (debootstrap)
+# OpenBSD installation 
 
 ## Pre-installation setup
 
@@ -17,9 +17,10 @@ Assuming you already have drivers installed and have previously connected to a k
 Installed needed packages
 
     pkg_add wpa_supplicant
-On Gentoo
+On OpenBSD
 ````
-sudo emerge -av debootstrap cryptsetup
+doas rcctl enable wpa_supplicant
+doas rcctl start wpa_supplicant
 ````
 
 ## Partitions
