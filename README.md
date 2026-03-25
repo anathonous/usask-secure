@@ -16,12 +16,12 @@ Assuming you already have drivers installed and have previously connected to a k
 
 Installed needed packages
 
-    pkg_add wpa_supplicant
+    doas pkg_add wpa_supplicant
     
 On OpenBSD
 ````
-doas rcctl enable wpa_supplicant
-doas rcctl start wpa_supplicant
+ doas rcctl enable wpa_supplicant
+ doas rcctl start wpa_supplicant
 ````
 
 ## Configure /etc/wpa_supplicant.conf
@@ -62,7 +62,9 @@ Naming depends heavily on your wifi driver and card. Should be hostname.DRIVER
 ````
 Should work upon reboot or 
 
-    sh /etc/netstart iwm0
+    doas sh /etc/netstart iwm0
    
+   ### DONE
+
 Inquire if any issues.
 
