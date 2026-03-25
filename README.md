@@ -14,7 +14,7 @@ How to connect to usask-secure (WPA2 Enterprise) on
 
 Assuming you already have drivers installed and have previously connected to a known working wifi network. 
 
-Installed needed packages
+Install needed packages
 
     doas pkg_add wpa_supplicant
     
