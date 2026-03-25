@@ -72,7 +72,7 @@ Should work upon reboot or
 ### DONE
 Now when you are in range of usask-secure it will auto connect.
 
-Inquire if any issues.
+Inquire if you have any issues.
 
 <p align="center"><img src=thorvalds.jpg width="700"></p><br>
 Now quit slacking off and focus on your studies, theres only so much time in a day. Remain DEDICATED to your studies.
