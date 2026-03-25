@@ -15,9 +15,9 @@ How to connect to usask-secure (WPA2 Enterprise) on
 Assuming you already have drivers installed and have previously connected to a known working wifi network. 
 
 Install needed packages
-
+````
     doas pkg_add wpa_supplicant
-    
+````
 On OpenBSD
 ````
  doas rcctl enable wpa_supplicant
@@ -58,15 +58,15 @@ Naming depends heavily on your wifi driver and card. Should be hostname.DRIVER
 
  - save config
 
-   ### Apply
+### Apply
 ````
     doas reboot
 ````
 Should work upon reboot or 
-
+````
     doas sh /etc/netstart iwm0
-   
-   ### DONE
+````
+### DONE
 Now when you are in range of usask-secure it will auto connect.
 
 Inquire if any issues.
