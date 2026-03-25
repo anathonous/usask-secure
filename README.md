@@ -8,7 +8,7 @@ How to connect to usask-secure on
  - Solaris
  - Linux
 
-# OpenBSD installation 
+# OpenBSD configuration
 
 ## Pre-installation setup
 
@@ -17,51 +17,54 @@ Assuming you already have drivers installed and have previously connected to a k
 Installed needed packages
 
     pkg_add wpa_supplicant
+    
 On OpenBSD
 ````
 doas rcctl enable wpa_supplicant
 doas rcctl start wpa_supplicant
 ````
 
-## Partitions
+## Configure /etc/wpa_supplicant.conf
 
-### Creating partitions
+### edit wpa_supplicant
 
-Perform formatting and partitioning with cfdisk. 
+Modify file to reflect your authorized user configuration
 ````
-cfdisk /dev/nvme0n1
-````
- - create a new partition 2G or more. Change type to EFI System.
- - create a new partition 8G or more. Leave type as Linux.
- - Create a new partition 100%FREE. Use remainder of drive. Leave type as Linux.
- - Save and write to disk
- - Ext
+ctrl_interface=/var/run/wpa_supplicant
+ctrl_interface_group=wheel
+ap_scan=0
 
-### Preparing partitions
-
-Format the first partition as EFI (boot) and set needed flags:
-
-    mkfs.fat -F 32 /dev/nvme0n1p1
-    parted /dev/nvme0n1 set 1 esp on
-    parted /dev/nvme0n1 set 1 boot on
-
-Prepare the second encrypted swap partition
-````
-    cryptsetup luksFormat -s 256 -c aes-xts-plain64 /dev/nvme0n1p2
-````
-Respond with a "YES" and enter a passphrase twice (-y provides this).
-
-Open the main partition with a name "OPEN"
-
-    cryptsetup open /dev/nvme0n1p2 DEBIANSWAP 
-    <passphrase>
-
-Format the partition as swap
+network={
+    ssid="uofs-secure"
+    key_mgmt=WPA-EAP
+    pairwise=CCMP
+    group=CCMP
+    eap=PEAP
+    identity="YOURNSID"
+    password="YOURPASSWORD"
+    phase2="auth=MSCHAPV2"
+}
 
 ````
-mkswap /dev/mapper/DEBIANSWAP
-swapon /dev/mapper/DEBIANSWAP
+ - save config
+
+### Modify your auto connect /etc/hostname.iwm0
+
+Naming depends heavily on your wifi driver and card. Should be hostname.DRIVER
+
+    join homenetwork wpakey homepass
+    join uofs-secure wpa wpaakms 802.1x
+    inet autoconf
+
+ - save config
 ````
+    doas reboot
+````
+Should work upon reboot or 
+
+    sh /etc/netstart iwm0
+   
+Inquire if any issues.
 
 ### Creating BTRFS main and subvolumes
 ````
