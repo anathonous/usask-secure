@@ -1,4 +1,4 @@
-<p align="center"><img src=logo.jpeg width="400"></p><br>
+<p align="center"><img src=logo.jpeg width="500"></p><br>
 
 How to connect to usask-secure (WPA2 Enterprise) on 
 
@@ -74,5 +74,5 @@ Now when you are in range of usask-secure it will auto connect.
 
 Inquire if any issues.
 
-<p align="center"><img src=thorvalds.jpg width="500"></p><br>
+<p align="center"><img src=thorvalds.jpg width="600"></p><br>
 Now quit slacking off and focus on your studies, theres only so much time in a day. Remain DEDICATED to your studies.
