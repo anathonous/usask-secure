@@ -62,8 +62,8 @@ Naming depends heavily on your wifi driver and card. Should be hostname.DRIVER
 
 ### Apply
 ````
-   doas chmod 600 /etc/hostname.if
-   doas reboot
+    doas chmod 600 /etc/hostname.if
+    doas reboot
 ````
 Should work upon reboot or 
 ````
