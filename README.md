@@ -5,6 +5,7 @@ How to connect to usask-secure (WPA2 Enterprise) on
  - OpenBSD
  - NetBSD 
  - FreeBSD
+ - DragonflyBSD
  - Solaris
  - Linux
 
