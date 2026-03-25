@@ -78,6 +78,6 @@ Inquire if you have any issues.
 <p align="center"> <a href="https://www.cs.usask.ca/"><img src=thorvalds.jpg width="700" title="fuckin nerds"> </a> </p><br>
 Now quit slacking off and focus on your studies, theres only so much time in a day. Remain DEDICATED to your studies.
 
-<p align="center"><a href="https://www.bsdcan.org"><img src=bsdcan.png height="98"></a><a href="https://www.openbsd.org"><img src=openbsd.png height="98"></a><a href="https://www.youtube.com/watch?v=nC6dBsNz0oc"><img src=bobanddoug.jpg height="98"></a></p><br>
+<p align="center"><a href="https://www.bsdcan.org"><img src=bsdcan.png height="98"></a><a href="https://www.openbsd.org"><img src=openbsd.png height="98"></a><a href="https://www.youtube.com/watch?v=nC6dBsNz0oc"><img src=bobanddoug.jpg height="98" title="hozeheads"></a></p><br>
 <br>
 <p align="center"><a href="https://www.exploresquamish.com"><img src=thechief.jpg height="500"></a></p>
