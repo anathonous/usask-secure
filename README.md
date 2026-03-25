@@ -16,7 +16,7 @@ Assuming you already have drivers installed and have previously connected to a k
 
 Install needed packages
 ````
-    doas pkg_add wpa_supplicant
+ doas pkg_add wpa_supplicant
 ````
 On OpenBSD
 ````
