@@ -26,7 +26,7 @@ On OpenBSD
 
 ## Configure /etc/wpa_supplicant.conf and hostname.if
 
-### edit wpa_supplicant
+### Modify /etc/wpa_supplicant.conf
 
 Modify file to reflect your authorized user configuration
 ````
@@ -48,7 +48,7 @@ network={
 ````
  - save config
 
-### Modify your auto connect /etc/hostname.iwm0
+### Modify /etc/hostname.iwm0
 
 Naming depends heavily on your wifi driver and card. Should be hostname.DRIVER
 
