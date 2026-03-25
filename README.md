@@ -76,4 +76,5 @@ Inquire if you have any issues.
 
 <p align="center"><img src=thorvalds.jpg width="700"></p><br>
 Now quit slacking off and focus on your studies, theres only so much time in a day. Remain DEDICATED to your studies.
-<p align="center"><img src=bsdcan.png height="300" href=bsdcan.ca><img src=openbsd.gif height="300" href=openbsd.org></p><br>
+
+<p align="center"><a href="https://www.bsdcan.ca"><img src=bsdcan.png height="300"></a><br><a href="https://www.openbsd.org"><img src=openbsd.gif height="300"></a></p><br>
