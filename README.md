@@ -65,6 +65,7 @@ Should work upon reboot or
     doas sh /etc/netstart iwm0
    
    ### DONE
+Now when you are in range of usask-secure it will auto connect.
 
 Inquire if any issues.
 
