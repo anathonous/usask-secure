@@ -1,4 +1,4 @@
-<p align="center"><img src=logo.jpeg width="300"></p><br>
+<p align="center"><img src=logo.jpeg width="400"></p><br>
 
 How to connect to usask-secure (WPA2 Enterprise) on 
 
