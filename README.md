@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="Y3j8nDBiAChfoisUTmdRWQrwTaOVVgnk8M5sEYN_gyo" />
 <p align="center"><a href="https://www.usask.ca"> <img src=logo.jpeg width="500" title="University of Saskatchewan"></a></p><br>
 
 How to connect to usask-secure (WPA2 Enterprise) on 
